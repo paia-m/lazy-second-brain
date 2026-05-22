@@ -1,11 +1,15 @@
 # Handoff
 
-Canonical handoff lives in Connectar:
+Canonical source: https://github.com/paia-m/lazy-second-brain
 
-- Remote: `https://github.com/paia-m/Connectar/blob/main/handoff.md`
-- Index: `https://raw.githubusercontent.com/paia-m/Connectar/main/handoff.index.json`
+This repository is the public Lazy Second Brain starter vault. It keeps the starter notes, setup checklist, guardrails, and graph map needed for a first Obsidian session.
 
-Optional local checkout: `~/Connectar`
+Useful entry points:
 
-This repository keeps local contracts, schemas, ADRs, and implementation notes
-here. Cross-repo resume state belongs in Connectar.
+- `README.md` for public clone instructions.
+- `START_HERE.md` for the first vault session.
+- `00 Inbox/first-run.md` for the assistant setup prompt.
+- `SETUP.md` for setup state.
+- `VAULT_MAP.md` for the starter note graph.
+
+Keep personal notes, private resume state, and cross-repo implementation handoffs out of this starter repo.

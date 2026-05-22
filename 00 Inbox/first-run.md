@@ -1,6 +1,8 @@
 # First Run Prompt
 
-Paste this into Codex, Claude Code, or another assistant that can work with local files.
+Paste this into Codex, Claude Code, or another assistant that can work with local files after cloning or downloading the public repo.
+
+Public repo: https://github.com/paia-m/lazy-second-brain
 
 Related docs: [[START_HERE]], [[SETUP]], [[GUARDRAILS]], and [[VAULT_MAP]].
 
@@ -11,9 +13,10 @@ Primary intent for this session: get the vault fully set up and usable on my mac
 
 First, tailor the setup to me:
 1. Ask what operating system I am using.
-2. Ask where this repo lives on my machine.
-3. Ask my comfort level: beginner, comfortable with files, or comfortable with terminal commands.
-4. Ask whether I already have Obsidian installed.
+2. Ask whether I already have this repo locally. If not, have me clone `https://github.com/paia-m/lazy-second-brain.git` or download the public repo.
+3. Ask where this repo lives on my machine.
+4. Ask my comfort level: beginner, comfortable with files, or comfortable with terminal commands.
+5. Ask whether I already have Obsidian installed.
 
 Then guide me through the setup. If you can create or edit files directly, do it. If you cannot access my machine, give me one clear manual step at a time, wait for me to confirm it is done, then continue.
 

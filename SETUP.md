@@ -4,8 +4,14 @@ Use this checklist during the first assistant-guided setup session.
 
 Related docs: [[START_HERE]], [[GUARDRAILS]], [[00 Inbox/first-run|First Run Prompt]], and [[VAULT_MAP]].
 
+## Source
+
+- Public repo: https://github.com/paia-m/lazy-second-brain
+- Clone URL: `https://github.com/paia-m/lazy-second-brain.git`
+
 ## Machine Setup
 
+- [ ] Clone or download the public repo.
 - [ ] Confirm operating system.
 - [ ] Confirm where this vault lives on the machine.
 - [ ] Confirm comfort level: beginner, comfortable with files, or comfortable with terminal commands.
