@@ -4,6 +4,8 @@ A beginner-friendly Obsidian vault starter for building a practical Second Brain
 
 Public repo: https://github.com/paia-m/lazy-second-brain
 
+Agent context: see [AGENTS.md](AGENTS.md).
+
 The goal is simple: clone this repo, open it in Obsidian, and let an assistant guide the first setup session. The vault starts with the core folders, starter notes, guardrails, and first-run checklist already in place.
 
 ## Quick Start

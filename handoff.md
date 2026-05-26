@@ -1,5 +1,13 @@
 # Handoff
 
+Canonical cross-repo handoff lives in chrollo:
+
+- Local launch repo: `/workspaces/chrollo`
+- Handoff: `/workspaces/chrollo/handoff.md`
+- Index: `/workspaces/chrollo/handoff.index.json`
+
+## Local Notes
+
 Canonical source: https://github.com/paia-m/lazy-second-brain
 
 This repository is the public Lazy Second Brain starter vault. It keeps the starter notes, setup checklist, guardrails, and graph map needed for a first Obsidian session.

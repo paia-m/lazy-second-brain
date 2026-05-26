@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "lazy-second-brain",
+  "role": "project",
+  "contextLevel": "starter",
+  "agentContext": [
+    "AGENTS.md",
+    "README.md",
+    "handoff.md",
+    "START_HERE.md",
+    "GUARDRAILS.md",
+    "SETUP.md",
+    "VAULT_MAP.md",
+    "00 Inbox/first-run.md"
+  ],
+  "startHere": [
+    "AGENTS.md",
+    "README.md",
+    "START_HERE.md"
+  ],
+  "verify": [
+    "python3 -m json.tool paia.repo.json >/dev/null",
+    "bash -lc 'shopt -s globstar nullglob; files=(**/*.json); for file in \"${files[@]}\"; do python3 -m json.tool \"$file\" >/dev/null; done'",
+    "git diff --check"
+  ],
+  "ci": {
+    "required": true,
+    "workflow": ".github/workflows/docs-checks.yml"
+  },
+  "pi": {
+    "launchFrom": "/workspaces/chrollo"
+  },
+  "writePolicy": {
+    "default": "active-repo-only",
+    "siblingWrites": "explicit-elevation"
+  }
+}
