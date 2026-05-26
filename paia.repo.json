@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "lazy-second-brain",
   "role": "project",
   "contextLevel": "starter",
@@ -30,8 +30,29 @@
   "pi": {
     "launchFrom": "/workspaces/chrollo"
   },
-  "writePolicy": {
-    "default": "active-repo-only",
-    "siblingWrites": "explicit-elevation"
+  "startupLanguagePolicy": {
+    "canonicalSource": "markdown",
+    "languageMap": "VAULT_MAP.md",
+    "languageFile": "AGENTS.md",
+    "startupAwareness": [
+      "vault entry path",
+      "guardrails",
+      "starter workflow"
+    ],
+    "startupPolicy": {
+      "default": "load language map, then task-relevant startHere files",
+      "deferLanguageFile": true
+    },
+    "loadLanguageFileWhen": [
+      "vault structure matters",
+      "local agent instructions are needed",
+      "naming or taxonomy is ambiguous"
+    ]
+  },
+  "workbenchAuthority": {
+    "localEdits": "git-reviewable",
+    "crossRepoEdits": "task-scoped",
+    "protectedAuthority": "explicit-intent-and-risk-tier",
+    "eventLog": "paia.workbench_authority"
   }
 }
