@@ -1,0 +1,59 @@
+{
+  "$schema": "/workspaces/chrollo/schemas/paia-provenance.schema.json",
+  "schemaVersion": 1,
+  "repoId": "lazy-second-brain",
+  "purpose": "Sibling provenance pointer manifest for chrollo-facing runtime paths. Track only pointers this repo publishes back to chrollo unless local runtime-actionable artifacts need stable identity.",
+  "entities": [
+    {
+      "id": "paia://lazy-second-brain/reference/chrollo-runtime",
+      "kind": "external-reference",
+      "name": "chrollo runtime pointers",
+      "canonicalPath": "paia.provenance.json",
+      "declaredBy": "paia.provenance.json",
+      "references": [
+        {
+          "file": "paia.repo.json",
+          "target": "/workspaces/chrollo",
+          "targetEntity": "paia://chrollo/repo/operator",
+          "context": "Pi launch root"
+        },
+        {
+          "file": "handoff.md",
+          "target": "/workspaces/chrollo",
+          "targetEntity": "paia://chrollo/repo/operator",
+          "context": "canonical handoff launch repo"
+        },
+        {
+          "file": "AGENTS.md",
+          "target": "/workspaces/chrollo",
+          "targetEntity": "paia://chrollo/repo/operator",
+          "context": "agent operating model"
+        },
+        {
+          "file": "handoff.md",
+          "target": "/workspaces/chrollo/handoff.md",
+          "targetEntity": "paia://chrollo/handoff/canonical",
+          "context": "canonical handoff pointer"
+        },
+        {
+          "file": "AGENTS.md",
+          "target": "/workspaces/chrollo/handoff.md",
+          "targetEntity": "paia://chrollo/handoff/canonical",
+          "context": "agent handoff pointer"
+        },
+        {
+          "file": "handoff.md",
+          "target": "/workspaces/chrollo/handoff.index.json",
+          "targetEntity": "paia://chrollo/handoff/index",
+          "context": "canonical handoff index pointer"
+        },
+        {
+          "file": "AGENTS.md",
+          "target": "/workspaces/chrollo/handoff.index.json",
+          "targetEntity": "paia://chrollo/handoff/index",
+          "context": "agent handoff index pointer"
+        }
+      ]
+    }
+  ]
+}
